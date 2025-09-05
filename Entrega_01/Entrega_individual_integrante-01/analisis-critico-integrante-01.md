@@ -6,3 +6,8 @@ A mí me interesa mucho este proyecto porque me encanta el análisis de modas y 
 Lo que espero contar con este trabajo es, por un lado, el recorrido de cómo se está instalando el pistacho en Chile. Desde los datos duros de importaciones y hectáreas plantadas, hasta las tendencias de consumo y la moda que se genera en torno a él. Pero también me interesa revelar cómo este fenómeno se conecta con un patrón más amplio. Cómo algo pasa de ser “de nicho” a convertirse en una tendencia generalizada. En el fondo, mostrar el pistacho como un espejo de cómo funcionan las modas en general. 
 
 El impacto que me gustaría generar tiene que ver con abrir la mirada de las personas hacia lo que consumen. Que no solo vean que hay un boom del pistacho porque está “rico” o “se puso de moda”, sino que comprendan que detrás hay movimientos de mercado, intereses de la industria, cambios culturales y hasta cuestiones aspiracionales (porque consumir ciertos productos también es, muchas veces, una forma de pertenecer o diferenciarse). Quiero que quien lea este reportaje pueda reconocer que lo que parece un simple “me gusta el pistacho” tiene un trasfondo más grande, que tiene que ver con cómo nos relacionamos con las modas en la sociedad.
+
+Para poder comprender de la manera más clara se presnetan estas tres ideas: 
+- Collage dinámico de productos con pistacho: chocolate Dubai, café latte,, galletas, acai, pastelería.
+- gráfico de hectáreas plantadas, importaciones, consumo anual. Poner contraste con otros frutos secos.
+- una ilustración de todos los personajes que se necesitan para mostrar que no solo son consumidores, también hay productores, agricultores y un mercado que empuja el boom.
