@@ -8,6 +8,6 @@ Lo que espero contar con este trabajo es, por un lado, el recorrido de cómo se 
 El impacto que me gustaría generar tiene que ver con abrir la mirada de las personas hacia lo que consumen. Que no solo vean que hay un boom del pistacho porque está “rico” o “se puso de moda”, sino que comprendan que detrás hay movimientos de mercado, intereses de la industria, cambios culturales y hasta cuestiones aspiracionales (porque consumir ciertos productos también es, muchas veces, una forma de pertenecer o diferenciarse). Quiero que quien lea este reportaje pueda reconocer que lo que parece un simple “me gusta el pistacho” tiene un trasfondo más grande, que tiene que ver con cómo nos relacionamos con las modas en la sociedad.
 
 Para poder comprender de la manera más clara se presnetan estas tres ideas: 
-Collage dinámico de productos con pistacho: chocolate Dubai, café latte,, galletas, acai, pastelería.
-Gráfico de hectáreas plantadas, importaciones, consumo anual. Poner contraste con otros frutos secos.
-Una ilustración de todos los personajes que se necesitan para mostrar que no solo son consumidores, también hay productores, agricultores y un mercado que empuja el boom.
+1. Collage dinámico de productos con pistacho: chocolate Dubai, café latte,, galletas, acai, pastelería.
+2. Gráfico de hectáreas plantadas, importaciones, consumo anual. Poner contraste con otros frutos secos.
+3. Una ilustración de todos los personajes que se necesitan para mostrar que no solo son consumidores, también hay productores, agricultores y un mercado que empuja el boom.

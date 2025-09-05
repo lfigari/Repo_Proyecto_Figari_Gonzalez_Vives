@@ -5,6 +5,6 @@ Lo que espero contar en este reportaje es cómo las tendencias o productos viral
 Así, busco impactar en que el mercado chileno refleja tendencias internacionales aún sin ser un país productor relevante. Además, demostrar que un producto gastronómico de moda podría transformarse en un competidor dentro de la industria alimentaria. Tanto consumidores como productores entiendan el cambio y las oportunidades de ganancia por las dos partes que el pistacho puede traer. 
 
 Ideas para contar la historia: 
-Mapa interactivo que demuestre el auge de consumo, las tendencias, productos nuevos y las importaciones entre 2019 y 2024. 
-Que sea una comparación entre frutos secos para evidenciar que el pistacho esta ocupando un lugar importante. Mostrando si han salido nuevos productos tan diversos como los del pistacho en tan poco tiempo. 
-Una línea del tiempo en donde se narre visualmente la llegada del pistacho a la vida cotidiana chilena. Mostrando puntos de peak o “revolucionarios” como el chocolate Dubai o la crema de pistacho, quizás también con recetas nuevas que contengan pistacho, para mostrar cómo se instaló esta tendencia global
+1. Mapa interactivo que demuestre el auge de consumo, las tendencias, productos nuevos y las importaciones entre 2019 y 2024. 
+2. Que sea una comparación entre frutos secos para evidenciar que el pistacho esta ocupando un lugar importante. Mostrando si han salido nuevos productos tan diversos como los del pistacho en tan poco tiempo. 
+3. Una línea del tiempo en donde se narre visualmente la llegada del pistacho a la vida cotidiana chilena. Mostrando puntos de peak o “revolucionarios” como el chocolate Dubai o la crema de pistacho, quizás también con recetas nuevas que contengan pistacho, para mostrar cómo se instaló esta tendencia global

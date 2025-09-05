@@ -8,10 +8,10 @@ A nivel global, Chile no se encuentra bien posicionado respecto al cultivo de pi
 
 Para poder comunicar esta información de la manera más clara y visual, se proponen las siguientes tres ideas:
 
-**Mapa interactivo de cultivos:** mostrar la distribución geográfica de cada cultivo por región (almendra, nuez y pistacho), destacando las superficies con mayores hectáreas plantadas.
+1. Mapa interactivo de cultivos: mostrar la distribución geográfica de cada cultivo por región (almendra, nuez y pistacho), destacando las superficies con mayores hectáreas plantadas.
 
-**Infografía tipo ranking:** ordenar de mayor a menor los frutos secos en relación con las hectáreas plantadas a nivel nacional, permitiendo visualizar de manera fácil las diferencias.
+2. Infografía tipo ranking: ordenar de mayor a menor los frutos secos en relación con las hectáreas plantadas a nivel nacional, permitiendo visualizar de manera fácil las diferencias.
 
-**Gráficos en forma de árbol:** donde cada fruto seco es representado por un árbol, cuyo tamaño visual refleja la cantidad de hectáreas plantadas, permitiendo una comparación proporcional y sencilla de analizar.
+3. Gráficos en forma de árbol: donde cada fruto seco es representado por un árbol, cuyo tamaño visual refleja la cantidad de hectáreas plantadas, permitiendo una comparación proporcional y sencilla de analizar.
 
 Se busca que las representaciones gráficas permitan comprender las proporciones de los actuales cultivos de pistacho comparado con otros frutos secos en Chile.
