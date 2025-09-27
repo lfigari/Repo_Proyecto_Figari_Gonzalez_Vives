@@ -1,4 +1,5 @@
-1. Como se realizó el proceso
+1. Como se realizó el proceso: 
+
 Se construyó una base de datos limpia a partir de Google Trends para Chile (últimos 5 años) con los términos **Pistacho**, **Nueces** y **Chocolate dubai** en la misma consulta y que esten en la misma categoría. 
 Orden de los valores de la escala relativa de 0-100 
 Quitar los duplicados por fecha
