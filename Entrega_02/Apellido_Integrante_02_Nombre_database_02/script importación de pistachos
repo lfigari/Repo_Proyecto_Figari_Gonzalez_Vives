@@ -1,0 +1,13 @@
+import pandas as pd
+import altair as alt
+
+# Opciones de Altair para datasets grandes
+alt.data_transformers.disable_max_rows()
+
+# Cargar datos
+df = pd.read_csv("/content/Importaciones_pistacho_Base2.csv", sep=",")
+
+# Limpieza básica, acá sacamos la columna de índices, pueden hacerlo con excel también antes de guardar, esto es solo un ejemplo del proceso posible
+
+# Echar un vistazo
+df.head(20)
