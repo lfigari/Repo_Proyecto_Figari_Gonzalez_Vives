@@ -17,7 +17,7 @@ El proceso de limpieza de la base de datos de importaciones de pistachos a Chile
 **Paso 7:** se decidió no señalar desde 2002 hasta el 2011 porque no había registro de sus importaciones en pistacho. 
 Herramientas utilizadas:  Para este proceso se empleó principalmente Excel, aprovechando funciones como “Buscar” para llegar más rápido al código. Copy paste para copiar y pegar los datos y así no estar escribiendo cada uno en su columna. Youtube, para aprender a usar lo básico de Excel. Chat Gpt para analizar los datos y explicar conceptos como el CIF
 
-**Fuente de datos: **
+**Fuente de datos:**
 La base de datos se construyó exclusivamente a partir de los registros de importación del Servicio Nacional de Aduanas de Chile. 
 Esa fuente se usó porque entrega confiabilidad y oficialidad, al  ser una entidad gubernamental responsable del control aduanero, los datos son oficiales y reconocidos nacionalmente. Además, esta fuente está disponible para todo el mundo y es detallada año a año. Por último, estos datos se encuentran estructurados de manera limpia en Excel, lo que hace fácil su comprensión y análisis.
 
@@ -25,6 +25,7 @@ Esa fuente se usó porque entrega confiabilidad y oficialidad, al  ser una entid
 ¿Cómo ha evolucionado el valor total de las importaciones de pistachos en Chile desde 2012 hasta 2025?
 ¿Cuál es el patrón de importaciones por mes dentro de cada año?
 ¿qué años no hay registro?
+
 
 
 
