@@ -1,0 +1,16 @@
+1. Como se realizó el proceso
+Se construyó una base de datos limpia a partir de Google Trends para Chile (últimos 5 años) con los términos **Pistacho**, **Nueces** y **Chocolate dubai** en la misma consulta y que esten en la misma categoría. 
+Orden de los valores de la escala relativa de 0-100 
+Quitar los duplicados por fecha
+Mostrar que el chocolate dubai muestra 0 hasta 2024. 
+Herramientas:  
+- Jupyter/Google Colab
+- VS/Github
+
+2. Fuente de datos utilizada:
+- Google Trends. búsqueda web, Chile, últimos 5 años, todas las categorías.
+
+3. Preguntas que se pueden responder
+1. ¿Cuándo ocurre el peak de interés del término Chocolate Dubai?
+2. ¿Cómo evoluciona Pistacho respecto de Nueces a nivel anual?
+3. ¿Supera el interes por pistacho en algún momento el de nueces?
