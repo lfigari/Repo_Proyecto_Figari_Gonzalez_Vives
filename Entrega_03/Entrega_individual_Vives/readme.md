@@ -16,3 +16,13 @@ La visualización fue creada en formato Jupyter Notebook desde Google Colab util
 7. Importar pandas y altair en el código y extraer los datos de cada producto csv y pegar el código entregado por Chatgpt
 Arreglar errores de visualización como que los meses estaban ordenados por orden alfabético. 
 8. Editar cada código para los cinco productos en ambas visualizaciones
+
+# Preguntas que puede responder: 
+¿En qué meses se concentra la mayor parte de las importaciones?
+¿Qué meses tienen consistentemente valores bajos o nulos?
+¿Qué mes ha tenido el mayor crecimiento interanual?
+¿Hay algún mes con variabilidad muy alta?
+¿Cómo ha evolucionado la importación de cada fruto seco a lo largo de los años?
+¿Qué producto presenta un mayor crecimiento en los últimos periodos?
+¿En qué años se registraron los mayores y menores valores de importación?
+¿El año 2025 (hasta septiembre) ya supera los valores acumulados de años anteriores?
