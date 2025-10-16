@@ -18,11 +18,12 @@ Arreglar errores de visualización como que los meses estaban ordenados por orde
 8. Editar cada código para los cinco productos en ambas visualizaciones
 
 # Preguntas que puede responder: 
-¿En qué meses se concentra la mayor parte de las importaciones?
-¿Qué meses tienen consistentemente valores bajos o nulos?
-¿Qué mes ha tenido el mayor crecimiento interanual?
-¿Hay algún mes con variabilidad muy alta?
-¿Cómo ha evolucionado la importación de cada fruto seco a lo largo de los años?
-¿Qué producto presenta un mayor crecimiento en los últimos periodos?
-¿En qué años se registraron los mayores y menores valores de importación?
-¿El año 2025 (hasta septiembre) ya supera los valores acumulados de años anteriores?
+1. ¿En qué meses se concentra la mayor parte de las importaciones?
+2. ¿Qué meses tienen consistentemente valores bajos o nulos?
+3. ¿Qué mes ha tenido el mayor crecimiento interanual?
+4. ¿Hay algún mes con variabilidad muy alta?
+5. ¿Cómo ha evolucionado la importación de cada fruto seco a lo largo de los años?
+6. ¿Qué producto presenta un mayor crecimiento en los últimos periodos?
+7. ¿En qué años se registraron los mayores y menores valores de importación?
+8. ¿El año 2025 (hasta septiembre) ya supera los valores acumulados de años anteriores?
+
