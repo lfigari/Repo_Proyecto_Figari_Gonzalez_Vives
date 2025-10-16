@@ -1,18 +1,11 @@
-# DOCUMENTACIÓN: # 
 
-Para esta entrega trabajé con datos de importaciones anuales de pistacho, almendra, avellana, castaña y nuez, con el objetivo de observar las tendencias de crecimiento y comparar los valores acumulados entre años.
-Decidí hacer una visualización de dos maneras distintas sobre la base de datos. La primera, que expresa  los valores mensuales de importación según cada año y otra respecto al valor acumulado anual de los mismos productos.
-Por este motivo, decidí realizar dos bases de datos y trabajar con ambos.  Esto porque para hacer una comparación entre los meses y datos acumulados más precisa y coherente entre los distintos años y productos.
-La visualización fue creada en formato Jupyter Notebook desde Google Colab utilizando, Pandas y Altair y herramientas como altair-viz.github.io y Chatgpt. 
+## CRÓNICA
+Durante mucho tiempo, el pistacho fue un alimento de lujo que sólo algunos tenían en sus casas. Aparecía de repente en aperitivos elegantes o en alguna heladería italiana. Pero este año algo cambió. Niños, adolescentes y adultos de todo el mundo se volvieron partícipes de la tendencia del consumo de pistacho, y este excéntrico fruto seco, se volvió el producto favorito para publicar en redes sociales alrededor de todo el mundo, incluso en Chile. 
 
-# El paso a paso de la visualización fue el siguiente:  
+Productos como el chocolate Dubai o barquillos, pan, mantequilla y alfajores rellenos de pistachos son algunos de los alimentos que se han vuelto populares. Esta expansión del pistacho hacia distintos formatos, se encuentran desde pastelerías artesanales hasta productos gourmet y snacks masivos, transformando la tendencia en un producto cotidiano de cafeterías, tiendas y supermercados chilenos.
 
-1. Ordenar, filtrar y limpiar la base de datos pasada, realizando dos distintas: una que compare meses y años y otra que compara acumoluación de datos por años
-2. Descargar cada producto con un csv distinto.
-3. Crear dos notebooks en Google Colab distintos para las dos visualizaciones
-4. Subir cada cvs al notebook correspondiente de la visualización 
-5. Buscar desde la página  altair-viz.github.io un modelo que funcioné para cada visualización
-6. Copiar los datos y preguntarle a Chatgpt cómo arreglar el código para que muestre la tabla de comparación de mes y año y otra para hacer los valores de la importación acumulada hasta diciembre, haciendo una excepción con 2025 que llega hasta septiembre. 
-7. Importar pandas y altair en el código y extraer los datos de cada producto csv y pegar el código entregado por Chatgpt
-Arreglar errores de visualización como que los meses estaban ordenados por orden alfabético. 
-8. Editar cada código para los cinco productos en ambas visualizaciones
+Este cambio de la alimentación local se puede ver reflejado en números. El primer grafico que desglosa las importaciones por mes, permite ver con mayor detalle cómo se distribuyó este aumento a lo largo del año y el segundo gráfico muestra cómo las importaciones anuales de pistachos en Chile en 2025, superó por amplio margen a otros frutos secos, como la avellana, la castaña y la nuez. Además, aún con registros solo hasta septiembre, el valor acumulado ya sobrepasa el total de los años entre 2014 a 2024. Lo que quiere decir en otras palabras que Chile está importando más pistachos que en todo el tiempo que se tiene registro.
+
+Cuando hablamos de “valor acumulado” nos referimos al valor CIF (Costo, Seguro y Flete) en dólares estadounidenses, que representa el costo total de un producto importado incluyendo el precio de compra, el transporte internacional y el seguro. Este indicador permite comprender cuánto dinero ha destinado el país a importar un determinado producto, en este caso, los pistachos.
+
+Analizar el grafico mensual permite identificar los meses de mayor concentración de importaciones y comparar dinámicas entre años, y analizar la acumulación anual del valor CIF, permite confirmar el ascenso explosivo del pistacho en 2025, consolidando su posición como el producto más demandado dentro de su categoría, sin contar la almendra. Este aumento exponencial del valor CIF no solo refleja una tendencia en lo que consumimos los chilenos, sino también un cambio estructural, donde el pistacho pasó de ser un lujo importado a un símbolo de modernidad y bienestar. gourmet chilena.
