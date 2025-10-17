@@ -21,7 +21,7 @@ Los datos de exportación confirman un crecimiento del mercado a nivel global. P
 
 La base de datos sobre hectáreas plantadas en Chile demuestra que el pistacho se está consolidando como un actor estratégico dentro del mercado de frutos secos. No solo comienza a destacarse como un producto local, sino también como un potencial bien de exportación.
 
-Los datos que comparan mensualment la importación del pistacho y otros frutos secos cada año, además del valor de la acomulación anual de estos productos, evidencia que este ha sido un año exitoso en importación para el pistacho, lo que demuestra que sí podemos hablar de un aumento significativo de la popularidad de este alimento.
+Los datos que comparan mensualmente la importación del pistacho y otros frutos secos cada año, además del valor de la acomulación anual de estos productos, evidencia que este ha sido un año exitoso en importación para el pistacho, lo que demuestra que sí podemos hablar de un aumento significativo de la popularidad de este alimento.
 
 De esta manera, puede afirmarse que existe una clara sinergia entre el mercado de los frutos secos, el interés de los consumidores y la expansión productiva, lo que convierte al pistacho en un fruto seco con un alto potencial de desarrollo.
 
