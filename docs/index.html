@@ -1,10 +1,112 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Mi primera página</title>
+    <title>Webstory - Versión Estructura</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>¡Hola! Esta es mi página en GitHub Pages</h1>
+
+    <!-- Navegación principal -->
+    <nav>
+        <ul>
+            <li><a href="#INICIO">INICIO</a></li>
+            <li><a href="#BOOM">BOOM</a></li>
+            <li><a href="#TENDENCIA">#TENDENCIA</a></li>
+            <li><a href="#HECTÁREAS">HECTÁREAS</a></li>
+            <li><a href="#IMPORTACIONES">IMPORTACIONES</a></li>
+        </ul>
+    </nav>
+
+    <!-- Encabezado -->
+    <header>
+        <h1>EL BOOM DEL</h1>
+        <h2>PISTACHO</h2>
+    </header>
+
+    <!-- Sección INICIO -->
+    <section id="INICIO">
+        <img src="collage.jpg.jpg" alt="Descripción de la imagen" class="header-img">
+    </section>
+
+    <!-- Sección BOOM -->
+    <section id="BOOM">
+        <h2>BOOM</h2>
+
+        <div class="boom-container">
+            
+            <!-- Burbujita / cuadro con bordes ovalados -->
+            <div class="boom-text-box">
+                <p>
+                    Durante mucho tiempo, el pistacho fue un alimento de lujo que sólo algunos tenían en sus casas. 
+                    Aparecía en aperitivos elegantes o en alguna heladería italiana. Pero este año algo cambió. 
+                    Niños, adolescentes y adultos de todo el mundo se volvieron partícipes de la tendencia del pistacho.
+                    Productos como el chocolate Dubai, pan, mantequilla o alfajores rellenos son parte de esta explosión, 
+                    que transformó al pistacho en un producto cotidiano de cafeterías, tiendas y supermercados chilenos.
+                </p>
+            </div>
+
+            <!-- Espacio para IMAGEN o VIDEO -->
+            <div class="boom-media-box">
+                <!-- Aquí pegas un video o imagen -->
+                <img src="tu-imagen.jpg" alt="Boom Pistacho" />
+                <!-- Ejemplo video:
+                <video src="video.mp4" autoplay loop muted></video>
+                -->
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Sección tendencia -->
+    <section id="TENDENCIA">
+        <h2>#TENDENCIA</h2>
+        <p>texto.</p>
+
+        <div class="visualizacion">
+            <p>[Espacio para tu imagen/gráfico]</p>
+        </div>
+    </section>
+
+    <!-- Sección hectáreas -->
+    <section id="HECTÁREAS">
+        <h2>HECTÁREAS</h2>
+        <p>Aquí va la explicación del boom según tu narrativa.</p>
+
+        <div class="visualizacion">
+            <p>[Espacio para tu imagen/gráfico]</p>
+        </div>
+    </section>
+
+    <!-- Sección importaciones -->
+    <section id="IMPORTACIONES">
+        <h2>IMPORTACIONES</h2>
+
+        <p>
+            Este cambio de la alimentación local se ve reflejado en números. El primer gráfico muestra cómo se distribuyeron 
+            las importaciones por mes, y el segundo revela que las importaciones anuales de pistachos en 2025 superan por lejos 
+            a otros frutos secos, incluso con datos solo hasta septiembre.
+        </p>
+
+        <!-- FRASE DESTACADA -->
+        <h3 class="frase-destacada">
+            ¡Chile está importando más pistachos que en todo el tiempo que se tiene registro!
+        </h3>
+
+        <div class="visualizacion">
+            <p>[Espacio para tu imagen/gráfico del BOOM]</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Proyecto Webstory — Lucia Figari, María José González y Catalina Vives</p>
+    </footer>
+
+    <!-- Librerías JS -->
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+    <script src="script.js"></script>
+
 </body>
 </html>
