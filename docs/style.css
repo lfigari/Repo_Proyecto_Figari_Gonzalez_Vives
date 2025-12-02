@@ -26,6 +26,25 @@ body {
     color: #333;
 }
 
+/* ---------------- NAVEGACIÓN ------------------------- */
+nav {
+    background-color: var(--cafe);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 /* ---------------- HEADER ----------------------------- */
 header {
     background-color: var(--verde-oscuro);
@@ -47,26 +66,7 @@ header h2 {
     color: var(--amarillo);
 }
 
-/* ---------------- NAVEGACIÓN ------------------------- */
-nav {
-    background-color: var(--cafe);
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 10px;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-/* ---------------- SECCIONES -------------------------- */
+/* ---------------- SECCIONES GENERALES -------------------------- */
 section {
     padding: 40px 20px;
     border-bottom: 1px solid var(--amarillo);
@@ -79,35 +79,13 @@ section h2 {
 /* IMAGEN FULL-WIDTH */
 .header-img {
     width: 100%;
-    height: auto;
-    display: block;
     object-fit: cover;
 }
 
-/* -------- FRASE DESTACADA -------- */
-.frase-destacada {
-    font-size: 40px;
-    color: var(--negro-intenso);
-    font-weight: 900;
-    margin: 30px 0;
-    text-align: center;
-    background-color: #f6f6f6;
-    padding: 20px;
-    border-left: 10px solid var(--verde-oscuro);
-    border-radius: 8px;
-}
+/* ===================================================== */
+/* ====================== BOOM ========================= */
+/* ===================================================== */
 
-/* -------- BLOQUE VISUALIZACIONES -------- */
-.visualizacion {
-    border: 2px dashed var(--verde-oscuro);
-    padding: 30px;
-    margin: 20px 0;
-    text-align: center;
-    color: var(--cafe);
-    background-color: var(--amarillo);
-}
-
-/* ----------- BOOM: TEXTO + VIDEO/IMAGEN ----------- */
 .boom-container {
     display: flex;
     gap: 30px;
@@ -129,27 +107,17 @@ section h2 {
     justify-content: center;
 }
 
-.boom-media-box img,
-.boom-media-box video {
+.boom-media-box img {
     width: 100%;
     border-radius: 15px;
 }
 
-/* ---------------- FOOTER ----------------------------- */
-footer {
-    background-color: var(--cafe);
-    color: white;
-    text-align: center;
-    padding: 15px;
-}
-
 /* ===================================================== */
-/* ============  ESTILOS PARA LA VISUALIZACIÓN  ========= */
+/* ==================== TENDENCIA ====================== */
 /* ===================================================== */
 
 .chart-container {
     max-width: 1000px;
-    width: 100%;
     margin: 40px auto;
     box-shadow: 0 8px 24px rgba(0,0,0,0.08);
     border-radius: 16px;
@@ -159,27 +127,47 @@ footer {
 
 .chart-container img {
     width: 100%;
-    display: block;
 }
 
 .caption {
     font-size: 14px;
-    padding: 12px 20px 16px;
+    padding: 12px 20px;
     color: #555;
 }
 
-/* Colores del texto dentro del caption */
-.caption .term-pistacho {
-    color: var(--verde-oscuro);
-    font-weight: 600;
+.caption .term-pistacho { color: var(--verde-oscuro); font-weight: 600; }
+.caption .term-nuez { color: var(--cafe); font-weight: 600; }
+.caption .term-choc { color: var(--amarillo); font-weight: 600; }
+
+/* ===================================================== */
+/* ================== IMPORTACIONES ==================== */
+/* ===================================================== */
+
+.frase-destacada {
+    font-size: 40px;
+    color: var(--negro-intenso);
+    font-weight: 900;
+    margin: 30px 0;
+    text-align: center;
+    background-color: #f6f6f6;
+    padding: 20px;
+    border-left: 10px solid var(--verde-oscuro);
+    border-radius: 8px;
 }
 
-.caption .term-nuez {
+.visualizacion {
+    border: 2px dashed var(--verde-oscuro);
+    padding: 30px;
+    margin: 20px 0;
+    text-align: center;
     color: var(--cafe);
-    font-weight: 600;
+    background-color: var(--amarillo);
 }
 
-.caption .term-choc {
-    color: var(--amarillo);
-    font-weight: 600;
+/* ---------------- FOOTER ----------------------------- */
+footer {
+    background-color: var(--cafe);
+    color: white;
+    text-align: center;
+    padding: 15px;
 }
