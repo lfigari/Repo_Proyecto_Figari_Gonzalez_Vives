@@ -115,7 +115,6 @@ section h2 {
     margin-top: 20px;
 }
 
-/* BURBUJA / CUADRO OVALADO */
 .boom-text-box {
     flex: 1;
     background-color: #f2f2f2;
@@ -124,7 +123,6 @@ section h2 {
     border: 2px solid var(--verde-oscuro);
 }
 
-/* CUADRO DERECHO: VIDEO O IMAGEN */
 .boom-media-box {
     flex: 1;
     display: flex;
@@ -143,4 +141,45 @@ footer {
     color: white;
     text-align: center;
     padding: 15px;
+}
+
+/* ===================================================== */
+/* ============  ESTILOS PARA LA VISUALIZACIÓN  ========= */
+/* ===================================================== */
+
+.chart-container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 40px auto;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    border-radius: 16px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.chart-container img {
+    width: 100%;
+    display: block;
+}
+
+.caption {
+    font-size: 14px;
+    padding: 12px 20px 16px;
+    color: #555;
+}
+
+/* Colores del texto dentro del caption */
+.caption .term-pistacho {
+    color: var(--verde-oscuro);
+    font-weight: 600;
+}
+
+.caption .term-nuez {
+    color: var(--cafe);
+    font-weight: 600;
+}
+
+.caption .term-choc {
+    color: var(--amarillo);
+    font-weight: 600;
 }
