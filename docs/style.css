@@ -139,6 +139,18 @@ section h2 {
 .caption .term-nuez { color: var(--cafe); font-weight: 600; }
 .caption .term-choc { color: var(--amarillo); font-weight: 600; }
 
+/* --- NUEVO TEXTO LARGO DE TENDENCIAS --- */
+.tendencia-extra-text {
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: #fafafa;
+    padding: 25px 30px;
+    border-left: 6px solid var(--verde-oscuro);
+    border-radius: 10px;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
 /* ===================================================== */
 /* ================== IMPORTACIONES ==================== */
 /* ===================================================== */
@@ -162,6 +174,21 @@ section h2 {
     text-align: center;
     color: var(--cafe);
     background-color: var(--amarillo);
+}
+
+/* ===================================================== */
+/* ===================== HECTÁREAS ====================== */
+/* ===================================================== */
+
+.hectareas-extra-text {
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: #f9f9f9;
+    padding: 25px 30px;
+    border-left: 6px solid var(--cafe);
+    border-radius: 10px;
+    line-height: 1.6;
+    font-size: 18px;
 }
 
 /* ---------------- FOOTER ----------------------------- */
