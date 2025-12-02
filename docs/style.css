@@ -1,7 +1,7 @@
 /* -------- IMPORTAR TIPOGRAFÍAS GOOGLE FONTS -------- */
 @import url('https://fonts.googleapis.com/css2?family=April+Fatface&family=Lato:wght@300;400;700&display=swap');
 
-/* ------------- PALETA DE COLORES ------------------- */
+/* ------------- PALETA ------------------ */
 :root {
     --verde-oscuro: #7A9046;
     --amarillo: #D1D983;
@@ -9,28 +9,26 @@
     --negro-intenso: #1a1a1a;
 }
 
-/* ----------- TIPOGRAFÍAS --------------------------- */
+/* -------- TIPOGRAFÍAS -------- */
 h1, h2, h3, header, nav a {
     font-family: 'April Fatface', serif;
 }
-
 body, p, section, footer {
     font-family: 'Lato', sans-serif;
     font-size: 20px;
 }
 
-/* ----------- RESET --------------------------- */
+/* -------- RESET -------- */
 body {
     margin: 0;
     background-color: #fff;
     color: #333;
 }
 
-/* ---------------- NAVEGACIÓN ------------------------- */
+/* NAV */
 nav {
     background-color: var(--cafe);
 }
-
 nav ul {
     list-style: none;
     margin: 0;
@@ -38,85 +36,41 @@ nav ul {
     display: flex;
     justify-content: space-evenly;
 }
-
 nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
 }
 
-/* ---------------- HEADER ----------------------------- */
+/* HEADER */
 header {
     background-color: var(--verde-oscuro);
     color: white;
     padding: 20px;
     text-align: center;
 }
+header h1 { font-size: 45px; margin: 0; letter-spacing: 2px; }
+header h2 { font-size: 100px; margin: 0; line-height: .9; color: var(--amarillo); }
 
-header h1 {
-    font-size: 45px;
-    letter-spacing: 2px;
-    margin: 0;
-}
-
-header h2 {
-    font-size: 100px;
-    margin: 0;
-    line-height: 0.9;
-    color: var(--amarillo);
-}
-
-/* ---------------- SECCIONES GENERALES -------------------------- */
+/* SECCIONES */
 section {
     padding: 40px 20px;
     border-bottom: 1px solid var(--amarillo);
 }
-
 section h2 {
     color: var(--verde-oscuro);
 }
 
-/* IMAGEN FULL-WIDTH */
 .header-img {
     width: 100%;
     object-fit: cover;
 }
 
 /* ===================================================== */
-/* ====================== BOOM ========================= */
+/* ================= TENDENCIA ========================= */
 /* ===================================================== */
 
-.boom-container {
-    display: flex;
-    gap: 30px;
-    align-items: center;
-    margin-top: 20px;
-}
-
-.boom-text-box {
-    flex: 1;
-    background-color: #f2f2f2;
-    padding: 25px;
-    border-radius: 25px;
-    border: 2px solid var(--verde-oscuro);
-}
-
-.boom-media-box {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-}
-
-.boom-media-box img {
-    width: 100%;
-    border-radius: 15px;
-}
-
-/* ===================================================== */
-/* ==================== TENDENCIA ====================== */
-/* ===================================================== */
-
-/* 🎉 BURBUJA PARA GRÁFICO + TEXTO */
+/* única burbuja */
 .tendencia-bubble {
     max-width: 1100px;
     margin: 50px auto;
@@ -125,51 +79,45 @@ section h2 {
     border-radius: 30px;
     padding: 30px;
     position: relative;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
 }
 
-/* Triangulito elegante */
+/* triangulito */
 .tendencia-bubble::after {
     content: "";
     position: absolute;
     top: -20px;
     left: 60px;
-    width: 0;
-    height: 0;
     border-bottom: 20px solid var(--verde-oscuro);
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
 }
 
+/* gráfico SIN apariencia de burbuja */
 .chart-container {
     max-width: 1000px;
     margin: 20px auto;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
-    border-radius: 16px;
-    overflow: hidden;
-    background-color: #fff;
 }
-
 .chart-container img {
     width: 100%;
+    display: block;
 }
 
+/* caption */
 .caption {
     font-size: 14px;
     padding: 12px 20px;
     color: #555;
 }
-
 .caption .term-pistacho { color: var(--verde-oscuro); font-weight: 600; }
 .caption .term-nuez { color: var(--cafe); font-weight: 600; }
 .caption .term-choc { color: var(--amarillo); font-weight: 600; }
 
-/* --- TEXTO LARGO DE TENDENCIAS --- */
+/* texto adicional */
 .tendencia-extra-text {
-    max-width: 900px;
-    margin: 40px auto;
+    margin-top: 30px;
     background-color: #fafafa;
-    padding: 25px 30px;
+    padding: 25px;
     border-left: 6px solid var(--verde-oscuro);
     border-radius: 10px;
     line-height: 1.6;
@@ -177,46 +125,47 @@ section h2 {
 }
 
 /* ===================================================== */
-/* ================== IMPORTACIONES ==================== */
+/* OTROS BLOQUES (boom, importaciones, hectáreas) */
 /* ===================================================== */
+
+.boom-container {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.boom-text-box {
+    flex: 1;
+    background-color: #f2f2f2;
+    padding: 25px;
+    border-radius: 25px;
+    border: 2px solid var(--verde-oscuro);
+}
+.boom-media-box img {
+    width: 100%;
+    border-radius: 15px;
+}
 
 .frase-destacada {
     font-size: 40px;
-    color: var(--negro-intenso);
     font-weight: 900;
-    margin: 30px 0;
-    text-align: center;
-    background-color: #f6f6f6;
     padding: 20px;
     border-left: 10px solid var(--verde-oscuro);
-    border-radius: 8px;
 }
 
 .visualizacion {
     border: 2px dashed var(--verde-oscuro);
     padding: 30px;
-    margin: 20px 0;
-    text-align: center;
-    color: var(--cafe);
     background-color: var(--amarillo);
 }
-
-/* ===================================================== */
-/* ===================== HECTÁREAS ====================== */
-/* ===================================================== */
 
 .hectareas-extra-text {
     max-width: 900px;
     margin: 40px auto;
-    background-color: #f9f9f9;
-    padding: 25px 30px;
+    padding: 25px;
     border-left: 6px solid var(--cafe);
-    border-radius: 10px;
-    line-height: 1.6;
-    font-size: 18px;
+    background-color: #f9f9f9;
 }
 
-/* ---------------- FOOTER ----------------------------- */
 footer {
     background-color: var(--cafe);
     color: white;
