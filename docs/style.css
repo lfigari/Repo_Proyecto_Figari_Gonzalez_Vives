@@ -1,0 +1,185 @@
+/* -------- IMPORTAR TIPOGRAFÍAS GOOGLE FONTS -------- */
+@import url('https://fonts.googleapis.com/css2?family=April+Fatface&family=Lato:wght@300;400;700&display=swap');
+
+/* ------------- PALETA DE COLORES ------------------- */
+:root {
+    --verde-oscuro: #7A9046;
+    --amarillo: #D1D983;
+    --cafe: #8B6B4A;
+    --negro-intenso: #1a1a1a;
+}
+
+/* ----------- TIPOGRAFÍAS --------------------------- */
+h1, h2, h3, header, nav a {
+    font-family: 'April Fatface', serif;
+}
+
+body, p, section, footer {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
+
+/* ----------- RESET --------------------------- */
+body {
+    margin: 0;
+    background-color: #fff;
+    color: #333;
+}
+
+/* ---------------- HEADER ----------------------------- */
+header {
+    background-color: var(--verde-oscuro);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 45px;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+header h2 {
+    font-size: 100px;
+    margin: 0;
+    line-height: 0.9;
+    color: var(--amarillo);
+}
+
+/* ---------------- NAVEGACIÓN ------------------------- */
+nav {
+    background-color: var(--cafe);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ---------------- SECCIONES -------------------------- */
+section {
+    padding: 40px 20px;
+    border-bottom: 1px solid var(--amarillo);
+}
+
+section h2 {
+    color: var(--verde-oscuro);
+}
+
+/* IMAGEN FULL-WIDTH */
+.header-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* -------- FRASE DESTACADA -------- */
+.frase-destacada {
+    font-size: 40px;
+    color: var(--negro-intenso);
+    font-weight: 900;
+    margin: 30px 0;
+    text-align: center;
+    background-color: #f6f6f6;
+    padding: 20px;
+    border-left: 10px solid var(--verde-oscuro);
+    border-radius: 8px;
+}
+
+/* -------- BLOQUE VISUALIZACIONES -------- */
+.visualizacion {
+    border: 2px dashed var(--verde-oscuro);
+    padding: 30px;
+    margin: 20px 0;
+    text-align: center;
+    color: var(--cafe);
+    background-color: var(--amarillo);
+}
+
+/* ----------- BOOM: TEXTO + VIDEO/IMAGEN ----------- */
+.boom-container {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.boom-text-box {
+    flex: 1;
+    background-color: #f2f2f2;
+    padding: 25px;
+    border-radius: 25px;
+    border: 2px solid var(--verde-oscuro);
+}
+
+.boom-media-box {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.boom-media-box img,
+.boom-media-box video {
+    width: 100%;
+    border-radius: 15px;
+}
+
+/* ---------------- FOOTER ----------------------------- */
+footer {
+    background-color: var(--cafe);
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* ===================================================== */
+/* ============  ESTILOS PARA LA VISUALIZACIÓN  ========= */
+/* ===================================================== */
+
+.chart-container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 40px auto;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    border-radius: 16px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.chart-container img {
+    width: 100%;
+    display: block;
+}
+
+.caption {
+    font-size: 14px;
+    padding: 12px 20px 16px;
+    color: #555;
+}
+
+/* Colores del texto dentro del caption */
+.caption .term-pistacho {
+    color: var(--verde-oscuro);
+    font-weight: 600;
+}
+
+.caption .term-nuez {
+    color: var(--cafe);
+    font-weight: 600;
+}
+
+.caption .term-choc {
+    color: var(--amarillo);
+    font-weight: 600;
+}
