@@ -28,6 +28,8 @@ A partir de lo anterior, nuestra hipótesis se confirma y complejiza: El boom de
 
 Tabla de autoría: 
 
+![
+](<Captura de pantalla 2025-12-02 a las 12.36.00 p. m..png>)
 
 
 
