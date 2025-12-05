@@ -9,6 +9,10 @@
     --negro-intenso: #1a1a1a;
 }
 
+ .altair-viz { margin: 20px 0; }
+        /* Estilos para gráficos Matplotlib (ajusta según necesites) */
+        .matplotlib-figure { text-align: center; margin: 20px 0; border: 1px solid #ccc; padding: 10px; }
+
 /* -------- TIPOGRAFÍAS -------- */
 h1, h2, h3, header, nav a {
     font-family: 'April Fatface', serif;
