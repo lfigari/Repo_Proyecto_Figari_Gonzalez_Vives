@@ -5,6 +5,11 @@
     <title>Webstory - Versión Final</title>
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Collage Pistacho -->
+    <link rel="stylesheet" href="pistacho_banner_styles.css" />
+
+    <!-- Librerías gráficas -->
     <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
@@ -37,6 +42,31 @@
     <!-- Sección BOOM -->
     <section id="BOOM">
         <h2>BOOM</h2>
+
+        <!-- ⭐⭐⭐ COLLAGE INTERACTIVO INSERTADO AQUÍ ⭐⭐⭐ -->
+        <div class="collage-wrapper">
+            <div class="collage">
+                <!-- Capa base -->
+                <div class="collage-base"></div>
+
+                <!-- Piezas con máscara -->
+                <div class="piece piece-helado"        data-name="Helado de pistacho"></div>
+                <div class="piece piece-cookie-top"    data-name="Galleta de chocolate (arriba)"></div>
+                <div class="piece piece-chocolate"     data-name="Bloque de chocolate con pistacho"></div>
+                <div class="piece piece-bebida-centro" data-name="Bebida de pistacho (centro)"></div>
+                <div class="piece piece-bebida-der"    data-name="Bebida de pistacho (derecha)"></div>
+                <div class="piece piece-bowl-helado"   data-name="Cuenco de helado de pistacho"></div>
+                <div class="piece piece-parfait-top"   data-name="Parfait de pistacho (arriba derecha)"></div>
+                <div class="piece piece-parfait-bot"   data-name="Parfait de pistacho (abajo izquierda)"></div>
+                <div class="piece piece-croissant"     data-name="Croissant de pistacho"></div>
+                <div class="piece piece-swirl-choc"    data-name="Swirl de chocolate con pistacho"></div>
+                <div class="piece piece-jar"           data-name="Mantequilla de pistacho"></div>
+                <div class="piece piece-box"           data-name="Caja de pistachos"></div>
+                <div class="piece piece-cookie-bot"    data-name="Galleta de chocolate (abajo)"></div>
+            </div>
+        </div>
+        <!-- ⭐⭐⭐ FIN COLLAGE ⭐⭐⭐ -->
+
         <h3 class="frase-destacada">
             ¡Existe una transformación del mercado local!
         </h3>
@@ -52,9 +82,9 @@
                 </p>
             </div>
 
-            <!-- 📌 VIDEO AGREGADO AQUÍ -->
+            <!-- 📌 VIDEO AUTOPLAY + LOOP + SIN CONTROLES -->
             <div class="boom-media-box">
-                <video controls width="400">
+                <video autoplay loop muted playsinline width="400" class="video-flotante">
                     <source src="videotiktok.mp4" type="video/mp4">
                     Tu navegador no soporta el video.
                 </video>
@@ -70,7 +100,6 @@
             Desde 2020 a 2025 ha evolucionado el interés digital en Chile por los pistachos, comparándolo con un fruto seco tradicional (la nuez) y con un producto viral reciente (el chocolate Dubai).
         </p>
 
-        <!-- 🔥 ÚNICA BURBUJA AQUÍ — YA NO HAY DOS -->
         <div class="tendencia-bubble">
 
             <div class="caption">
@@ -84,10 +113,7 @@
             <div class="chart-container">
                 <img src="visualizacion trends.jpg" alt="Interés en el tiempo por término (Chile)" class="chart-image">
                 <div class="caption">
-                    <p> Esta comparación temporal es relevante porque permite situar al pistacho dentro de su categoría (frutos secos) y, al mismo tiempo, contrastarlo con un producto premium. La línea de los pistachos, aunque parte desde niveles bajos, revela un crecimiento sostenido en el tiempo, señal de que dejó de ser un producto de nicho para instalarse con mayor fuerza en las búsquedas y en la conversación digital. </p>
-                    <p> El contraste con las nueces permite ver que el pistacho está ganando terreno dentro de la categoría de frutos secos, mientras que la explosión del chocolate Dubai ilustra cómo las tendencias globales pueden activar rápidamente el interés de los consumidores chilenos. Aunque el pistacho no experimenta un peak viral tan abrupto, su curva ascendente lo sitúa dentro de este mismo ecosistema de consumo aspiracional. </p>
-                    <p> Las nueces mantienen un interés estable y relativamente alto, que sirve como línea base. Por esto se puede observar una tendencia al alza en 2024-2025 en el caso del pistacho y una explosión viral a inicios de 2025 en el caso del chocolate Dubai, un elemento gastronómico que responde a un fenómeno internacional, lo que demuestra que ya no es un producto marginal y está siendo cada vez más buscado. </p>
-                    <p> Frente a esto, se conecta un fenómeno económico, que involucra la importación, los precios y la producción de pistachos en Chile, con la dimensión cultural relacionada con las tendencias, las redes sociales y el “consumo aspiracional”. El boom del pistacho no es solo moda; su crecimiento sostenido es consistente con un producto que deja de ser de nicho para pasar a ser un fenómeno que está transformando el mercado local. </p>
+                    <p> Esta comparación temporal es relevante porque permite situar al pistacho dentro de su categoría (frutos secos) y, al mismo tiempo, contrastarlo con un producto premium...</p>
                 </div>
             </div>
         </div>
@@ -121,10 +147,7 @@
         </div>
 
         <div class="hectareas-text">
-            <p> El pistacho, aunque todavía no tiene una gran presencia, se encuentra en una fase de crecimiento y análisis dentro de las regiones de Valparaíso y Ñuble. Los veranos calurosos e inviernos fríos ofrecen condiciones óptimas para su cultivo, y gracias a la introducción de nuevas variedades y tecnologías agrícolas, este fruto comienza a perfilarse como una alternativa llamativa para los productores nacionales. </p>
-            <p> El interés por el pistacho no es nuevo. Durante la década de 1980 se realizaron intentos por establecer su cultivo en Chile, pero debido a las escasas variedades disponibles en ese entonces no se logró una adecuada adaptación al clima local. Hoy, con mejoras en los conocimientos técnicos y una demanda internacional en aumento, el pistacho reaparece como una oportunidad competitiva. </p>
-            <p> Desde 2011 hasta 2024, la superficie de pistacho en Chile ha crecido un 153%. Aunque este aumento parece significativo, sigue siendo menor si se compara con los grandes frutos secos del país: el avellano europeo creció un 1133%, el castaño un 298%, y el nogal un 171%. El almendro, en cambio, registró una disminución de -2,6% en el mismo período. </p>
-            <p> Sin embargo, al compararlo con los frutos secos de menor representación, como el pecano o la nuez de macadamia, el pistacho sí muestra un crecimiento relevante dentro de su categoría. Actualmente, existen cerca de 150 hectáreas dedicadas a la producción de este cultivo, la mayoría aún en etapa experimental, marcando el inicio de un posible nuevo capítulo para los frutos secos en Chile. </p>
+            <p> El pistacho, aunque todavía no tiene una gran presencia, se encuentra en una fase de crecimiento...</p>
         </div>
     </section>
 
@@ -133,10 +156,12 @@
         <p>Proyecto Webstory — Lucia Figari, María José González y Catalina Vives</p>
     </footer>
 
-    <!-- Librerías JS -->
+    <!-- Scripts -->
     <script src="script.js"></script>
-    <script src="visualizaciones\grafico_importaciones.js"></script>
+    <script src="visualizaciones/grafico_importaciones.js"></script>
 
+    <!-- Script del collage -->
+    <script src="pistacho_banner_script.js"></script>
 
 </body>
 </html>
