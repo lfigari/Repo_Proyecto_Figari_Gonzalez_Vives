@@ -162,10 +162,6 @@ section h2 {
     border-radius: 25px;
     border: 2px solid var(--verde-oscuro);
 }
-.boom-media-box img {
-    width: 100%;
-    border-radius: 15px;
-}
 
 .video-flotante {
     border-radius: 20px;
