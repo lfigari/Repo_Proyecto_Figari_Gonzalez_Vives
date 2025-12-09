@@ -384,3 +384,19 @@ footer {
   width: 100%;
   max-width: 900px;
 }
+
+.visualizacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#grafico-hectareas {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#grafico-hectareas > div {
+  margin: 0 auto;
+}
