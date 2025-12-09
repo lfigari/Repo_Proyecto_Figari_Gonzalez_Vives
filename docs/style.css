@@ -1,174 +1,386 @@
-/* -------- IMPORTAR TIPOGRAFÍAS GOOGLE FONTS -------- */
+/* Reset básico */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #ffffff;   /* ← FONDO BLANCO */
+  color: #222;
+}
+
+/* Layout general */
+.page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.instrucciones {
+  text-align: center;
+  margin-bottom: 24px;
+  color: #555;
+}
+
+/* Contenedor para centrar el collage */
+.collage-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+/* Collage responsivo */
+.collage {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  aspect-ratio: 1920 / 1080;
+  background: #ffffff; /* ← BLANCO */
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Capa base */
+.collage-base {
+  position: absolute;
+  inset: 0;
+  background-image: url("img/presentacion_pistacho.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Piezas */
+.piece {
+  position: absolute;
+  filter: grayscale(1);
+  inset: 0;
+  background-image: url("img/presentacion_pistacho.jpg");
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  transition: opacity 0.25s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.piece:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0 0 3px rgba(0, 150, 0, 0.35);
+}
+
+.piece.hidden {
+  opacity: 1;
+  pointer-events: none;
+  box-shadow: none;
+  filter: grayscale(0);
+}
+
+/* ---- CLIP PATHS ---- */
+.piece-helado {
+  clip-path: polygon(
+    2% 18%, 4% 10%, 9% 6%, 16% 6%, 22% 11%, 24% 18%, 23% 30%, 22% 40%,
+    21% 52%, 19% 63%, 16% 74%, 12% 84%, 7% 87%, 3% 82%, 1% 72%, 1% 58%,
+    1% 43%, 1% 30%
+  );
+}
+
+.piece-cookie-top {
+  clip-path: polygon(
+    32% 7%, 42% 5%, 52% 8%, 58% 17%, 56% 26%, 48% 31%,
+    39% 30%, 32% 24%, 29% 16%
+  );
+}
+
+.piece-chocolate {
+  clip-path: polygon(
+    35% 26%, 63% 19%, 79% 26%, 84% 40%, 81% 57%, 74% 72%,
+    61% 79%, 48% 80%, 37% 73%, 31% 60%, 29% 47%, 30% 34%
+  );
+}
+
+.piece-bebida-centro {
+  clip-path: polygon(
+    28% 40%, 32% 38%, 36% 40%, 38% 49%, 38% 62%, 36% 73%,
+    32% 76%, 28% 74%, 26% 63%, 26% 50%
+  );
+}
+
+.piece-bebida-der {
+  clip-path: polygon(
+    75% 58%, 78% 56%, 82% 57%, 85% 65%, 84% 76%, 81% 82%,
+    77% 82%, 74% 76%, 73% 66%
+  );
+}
+
+.piece-bowl-helado {
+  clip-path: polygon(
+    71% 16%, 82% 11%, 92% 13%, 97% 20%, 100% 30%, 98% 40%,
+    92% 49%, 82% 53%, 73% 49%, 67% 40%, 65% 30%, 67% 22%
+  );
+}
+
+.piece-parfait-top {
+  clip-path: polygon(
+    86% 3%, 91% 3%, 95% 5%, 96% 14%, 94% 21%, 90% 22%,
+    87% 18%, 85% 11%
+  );
+}
+
+.piece-parfait-bot {
+  clip-path: polygon(
+    20% 63%, 26% 61%, 31% 64%, 33% 73%, 32% 83%, 29% 91%,
+    24% 94%, 19% 92%, 16% 84%, 15% 74%
+  );
+}
+
+.piece-croissant {
+  clip-path: polygon(
+    49% 76%, 57% 73%, 64% 74%, 68% 79%, 70% 84%, 68% 90%,
+    63% 95%, 56% 97%, 49% 95%, 45% 89%, 44% 82%
+  );
+}
+
+.piece-swirl-choc {
+  clip-path: polygon(
+    9% 70%, 15% 69%, 22% 72%, 24% 79%, 22% 87%, 17% 92%,
+    10% 93%, 5% 90%, 3% 82%, 4% 75%
+  );
+}
+
+.piece-jar {
+  clip-path: polygon(
+    71% 79%, 78% 78%, 84% 79%, 87% 87%, 87% 97%, 80% 100%,
+    73% 99%, 69% 92%, 69% 85%
+  );
+}
+
+.piece-box {
+  clip-path: polygon(
+    83% 78%, 95% 77%, 100% 84%, 100% 97%, 93% 100%, 82% 99%,
+    77% 93%, 77% 85%
+  );
+}
+
+.piece-cookie-bot {
+  clip-path: polygon(
+    37% 68%, 44% 67%, 50% 69%, 53% 75%, 52% 82%, 47% 86%,
+    41% 87%, 35% 84%, 32% 78%, 33% 72%
+  );
+}
+
+.estado {
+  margin-top: 24px;
+}
+
+#removed-list {
+  padding-left: 20px;
+  min-height: 1.5em;
+}
+
+#removed-list li {
+  margin: 2px 0;
+}
+
+/* GOOGLE FONTS */
 @import url('https://fonts.googleapis.com/css2?family=April+Fatface&family=Lato:wght@300;400;700&display=swap');
 
-/* ------------- PALETA ------------------ */
+/* PALETA */
 :root {
-    --verde-oscuro: #7A9046;
-    --amarillo: #D1D983;
-    --cafe: #8B6B4A;
-    --negro-intenso: #1a1a1a;
+  --verde-oscuro: #7A9046;
+  --amarillo: #D1D983;
+  --cafe: #8B6B4A;
+  --negro-intenso: #1a1a1a;
 }
 
-/* -------- TIPOGRAFÍAS -------- */
+/* TIPOGRAFÍAS */
 h1, h2, h3, header, nav a {
-    font-family: 'April Fatface', serif;
+  font-family: 'April Fatface', serif;
 }
 body, p, section, footer {
-    font-family: 'Lato', sans-serif;
-    font-size: 20px;
-}
-
-/* -------- RESET -------- */
-body {
-    margin: 0;
-    background-color: #fff;
-    color: #333;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
 }
 
 /* NAV */
 nav {
-    background-color: var(--cafe);
+  background-color: var(--cafe);
 }
 nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 10px;
-    display: flex;
-    justify-content: space-evenly;
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
 }
 nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 /* HEADER */
 header {
-    background-color: var(--verde-oscuro);
-    color: white;
-    padding: 20px;
-    text-align: center;
+  background-color: var(--verde-oscuro);
+  color: white;
+  padding: 20px;
+  text-align: center;
 }
-header h1 { font-size: 45px; margin: 0; letter-spacing: 2px; }
-header h2 { font-size: 100px; margin: 0; line-height: .9; color: var(--amarillo); }
-
-/* SECCIONES */
-section {
-    padding: 40px 20px;
-    border-bottom: 1px solid var(--amarillo);
+header h1 {
+  font-size: 45px;
+  margin: 0;
+  letter-spacing: 2px;
 }
-section h2 {
-    color: var(--verde-oscuro);
+header h2 {
+  font-size: 100px;
+  margin: 0;
+  line-height: .9;
+  color: var(--amarillo);
 }
 
 .header-img {
-    width: 100%;
-    object-fit: cover;
+  width: 100%;
+  object-fit: cover;
 }
 
-/* ===================================================== */
-/* ================= TENDENCIA ========================= */
-/* ===================================================== */
+/* SECCIONES */
+section {
+  padding: 40px 20px;
+  border-bottom: 1px solid var(--amarillo);
+  background: #ffffff;
+}
+section h2 {
+  color: var(--verde-oscuro);
+}
 
-/* única burbuja */
+/* ==== BOOM / VIDEO ===== */
+.boom-container {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.boom-media-box {
+  background: #ffffff;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.boom-text-box {
+  flex: 1;
+  background-color: #f2f2f2;
+  padding: 25px;
+  border-radius: 25px;
+  border: 2px solid var(--verde-oscuro);
+}
+
+.frase-destacada {
+  font-size: 40px;
+  font-weight: 900;
+  padding: 20px;
+  border-left: 10px solid var(--verde-oscuro);
+}
+
+/* TENDENCIA */
 .tendencia-bubble {
-    max-width: 1100px;
-    margin: 50px auto;
-    background-color: #ffffff;
-    border: 3px solid var(--verde-oscuro);
-    border-radius: 30px;
-    padding: 30px;
-    position: relative;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  max-width: 1100px;
+  margin: 50px auto;
+  background-color: #ffffff;
+  border: 3px solid var(--verde-oscuro);
+  border-radius: 30px;
+  padding: 30px;
+  position: relative;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
 }
 
-/* triangulito */
 .tendencia-bubble::after {
-    content: "";
-    position: absolute;
-    top: -20px;
-    left: 60px;
-    border-bottom: 20px solid var(--verde-oscuro);
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 60px;
+  border-bottom: 20px solid var(--verde-oscuro);
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
 }
 
-/* gráfico SIN apariencia de burbuja */
-.chart-container {
-    max-width: 1000px;
-    margin: 20px auto;
-}
 .chart-container img {
-    width: 100%;
-    display: block;
+  width: 100%;
+  display: block;
 }
 
-/* caption */
 .caption {
-    font-size: 14px;
-    padding: 12px 20px;
-    color: #555;
+  font-size: 14px;
+  padding: 12px 20px;
+  color: #555;
 }
+
 .caption .term-pistacho { color: var(--verde-oscuro); font-weight: 600; }
 .caption .term-nuez { color: var(--cafe); font-weight: 600; }
 .caption .term-choc { color: var(--amarillo); font-weight: 600; }
 
-/* texto adicional */
-.tendencia-extra-text {
-    margin-top: 30px;
-    background-color: #fafafa;
-    padding: 25px;
-    border-left: 6px solid var(--verde-oscuro);
-    border-radius: 10px;
-    line-height: 1.6;
-    font-size: 18px;
-}
-
-/* ===================================================== */
-/* OTROS BLOQUES (boom, importaciones, hectáreas) */
-/* ===================================================== */
-
-.boom-container {
-    display: flex;
-    gap: 30px;
-    align-items: center;
-}
-.boom-text-box {
-    flex: 1;
-    background-color: #f2f2f2;
-    padding: 25px;
-    border-radius: 25px;
-    border: 2px solid var(--verde-oscuro);
-}
-.boom-media-box img {
-    width: 100%;
-    border-radius: 15px;
-}
-
-.frase-destacada {
-    font-size: 40px;
-    font-weight: 900;
-    padding: 20px;
-    border-left: 10px solid var(--verde-oscuro);
-}
-
+/* OTROS BLOQUES */
 .visualizacion {
-    border: 2px dashed var(--verde-oscuro);
-    padding: 30px;
-    background-color: var(--amarillo);
+  border: 2px dashed var(--verde-oscuro);
+  padding: 30px;
+  background-color: var(--amarillo);
 }
 
 .hectareas-extra-text {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 25px;
-    border-left: 6px solid var(--cafe);
-    background-color: #f9f9f9;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 25px;
+  border-left: 6px solid var(--cafe);
+  background-color: #f9f9f9;
 }
 
+/* FOOTER */
 footer {
-    background-color: var(--cafe);
-    color: white;
-    text-align: center;
-    padding: 15px;
+  background-color: var(--cafe);
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* ================================= */
+/*   NUEVA SECCIÓN: IMPORTACIONES    */
+/* ================================= */
+
+.importaciones-bubble {
+  max-width: 1100px;
+  margin: 50px auto;
+  background-color: #ffffff;
+  border: 3px solid var(--verde-oscuro);
+  border-radius: 30px;
+  padding: 30px;
+  position: relative;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+.importaciones-bubble::after {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 60px;
+  border-bottom: 20px solid var(--verde-oscuro);
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+}
+
+/* contenedor del gráfico */
+.importaciones-chart {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.importaciones-chart #altair-viz-pistacho-anual {
+  width: 100%;
+  max-width: 900px;
 }
