@@ -1,0 +1,1559 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Visualización Interactiva de Hectáreas (Vega-Lite)</title>
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+
+  <div id="vis"></div>
+
+  <script type="text/javascript">
+    // 3. Define la especificación Vega-Lite (el JSON que generaste)
+    const spec = 
+// Pega aquí el JSON completo de Vega-Lite que te proporcioné antes.
+// El JSON comienza con: { "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json", ... }
+// ... y termina con el último corchete: ] } }
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+  "config": {
+    "view": {
+      "continuousWidth": 300,
+      "continuousHeight": 300,
+      "strokeWidth": 0
+    },
+    "axis": {
+      "labelColor": "#4A5A2F",
+      "titleColor": "#4A5A2F"
+    },
+    "header": {
+      "labelColor": "#4A5A2F",
+      "titleColor": "#4A5A2F"
+    },
+    "title": {
+      "anchor": "start",
+      "fontSize": 14
+    }
+  },
+  "data": {
+    "values": [
+      {
+        "especie": "Almendro",
+        "time": 2024,
+        "value": 8324.11,
+        "id": 0,
+        "x_pos": 0
+      },
+      {
+        "especie": "Almendro",
+        "time": 2023,
+        "value": 8724.21,
+        "id": 0,
+        "x_pos": 0
+      },
+      {
+        "especie": "Almendro",
+        "time": 2022,
+        "value": 9401.03,
+        "id": 0,
+        "x_pos": 0
+      },
+      {
+        "especie": "Almendro",
+        "time": 2021,
+        "value": 9386.64,
+        "id": 0,
+        "x_pos": 0
+      },
+      {
+        "especie": "Almendro",
+        "time": 2020,
+        "value": 9057.4,
+        "id": 0,
+        "x_pos": 0
+      },
+      {
+        "especie": "Almendro",
+        "time": 2019,
+        "value": 8866.78,
+        "id": 0,
+        "x_pos": 0
+      },
+      {
+        "especie": "Almendro",
+        "time": 2018,
+        "value": 8863.4,
+        "id": 0,
+        "x_pos": 0
+      },
+      {
+        "especie": "Almendro",
+        "time": 2017,
+        "value": 8341.32,
+        "id": 0,
+        "x_pos": 0
+      },
+      {
+        "especie": "Almendro",
+        "time": 2016,
+        "value": 8113.5,
+        "id": 0,
+        "x_pos": 0
+      },
+      {
+        "especie": "Almendro",
+        "time": 2015,
+        "value": 8088.94,
+        "id": 0,
+        "x_pos": 0
+      },
+      {
+        "especie": "Almendro",
+        "time": 2014,
+        "value": 8569.45,
+        "id": 0,
+        "x_pos": 0
+      },
+      {
+        "especie": "Almendro",
+        "time": 2013,
+        "value": 8547.9,
+        "id": 0,
+        "x_pos": 0
+      },
+      {
+        "especie": "Almendro",
+        "time": 2012,
+        "value": 8548.87,
+        "id": 0,
+        "x_pos": 0
+      },
+      {
+        "especie": "Almendro",
+        "time": 2011,
+        "value": 8545.18,
+        "id": 0,
+        "x_pos": 0
+      },
+      {
+        "especie": "Almendro",
+        "time": 2010,
+        "value": 7617.13,
+        "id": 0,
+        "x_pos": 0
+      },
+      {
+        "especie": "Almendro",
+        "time": 2009,
+        "value": 6924.16,
+        "id": 0,
+        "x_pos": 0
+      },
+      {
+        "especie": "Almendro",
+        "time": 2008,
+        "value": 6192.29,
+        "id": 0,
+        "x_pos": 0
+      },
+      {
+        "especie": "Almendro",
+        "time": 2007,
+        "value": 5827.23,
+        "id": 0,
+        "x_pos": 0
+      },
+      {
+        "especie": "Almendro",
+        "time": 2006,
+        "value": 5822.35,
+        "id": 0,
+        "x_pos": 0
+      },
+      {
+        "especie": "Almendro",
+        "time": 2005,
+        "value": 5820.14,
+        "id": 0,
+        "x_pos": 0
+      },
+      {
+        "especie": "Almendro",
+        "time": 2004,
+        "value": 5691.21,
+        "id": 0,
+        "x_pos": 0
+      },
+      {
+        "especie": "Almendro",
+        "time": 2003,
+        "value": 5540.42,
+        "id": 0,
+        "x_pos": 0
+      },
+      {
+        "especie": "Almendro",
+        "time": 2002,
+        "value": 5122.1,
+        "id": 0,
+        "x_pos": 0
+      },
+      {
+        "especie": "Almendro",
+        "time": 2001,
+        "value": 5112.66,
+        "id": 0,
+        "x_pos": 0
+      },
+      {
+        "especie": "Almendro",
+        "time": 2000,
+        "value": 5121.69,
+        "id": 0,
+        "x_pos": 0
+      },
+      {
+        "especie": "Almendro",
+        "time": 1999,
+        "value": 5121.93,
+        "id": 0,
+        "x_pos": 0
+      },
+      {
+        "especie": "Avellano",
+        "time": 2024,
+        "value": 49263.54,
+        "id": 1,
+        "x_pos": 1
+      },
+      {
+        "especie": "Avellano",
+        "time": 2023,
+        "value": 36375.1,
+        "id": 1,
+        "x_pos": 1
+      },
+      {
+        "especie": "Avellano",
+        "time": 2022,
+        "value": 36393.23,
+        "id": 1,
+        "x_pos": 1
+      },
+      {
+        "especie": "Avellano",
+        "time": 2021,
+        "value": 24455.81,
+        "id": 1,
+        "x_pos": 1
+      },
+      {
+        "especie": "Avellano",
+        "time": 2020,
+        "value": 24429.5,
+        "id": 1,
+        "x_pos": 1
+      },
+      {
+        "especie": "Avellano",
+        "time": 2019,
+        "value": 24436.78,
+        "id": 1,
+        "x_pos": 1
+      },
+      {
+        "especie": "Avellano",
+        "time": 2018,
+        "value": 13103.55,
+        "id": 1,
+        "x_pos": 1
+      },
+      {
+        "especie": "Avellano",
+        "time": 2017,
+        "value": 13109.76,
+        "id": 1,
+        "x_pos": 1
+      },
+      {
+        "especie": "Avellano",
+        "time": 2016,
+        "value": 13108.74,
+        "id": 1,
+        "x_pos": 1
+      },
+      {
+        "especie": "Avellano",
+        "time": 2015,
+        "value": 8712.1,
+        "id": 1,
+        "x_pos": 1
+      },
+      {
+        "especie": "Avellano",
+        "time": 2014,
+        "value": 8686.88,
+        "id": 1,
+        "x_pos": 1
+      },
+      {
+        "especie": "Avellano",
+        "time": 2013,
+        "value": 8663.66,
+        "id": 1,
+        "x_pos": 1
+      },
+      {
+        "especie": "Avellano",
+        "time": 2012,
+        "value": 5722.38,
+        "id": 1,
+        "x_pos": 1
+      },
+      {
+        "especie": "Avellano",
+        "time": 2011,
+        "value": 3439.67,
+        "id": 1,
+        "x_pos": 1
+      },
+      {
+        "especie": "Avellano",
+        "time": 2010,
+        "value": 3439.67,
+        "id": 1,
+        "x_pos": 1
+      },
+      {
+        "especie": "Avellano",
+        "time": 2009,
+        "value": 3439.0,
+        "id": 1,
+        "x_pos": 1
+      },
+      {
+        "especie": "Avellano",
+        "time": 2008,
+        "value": 3439.0,
+        "id": 1,
+        "x_pos": 1
+      },
+      {
+        "especie": "Avellano",
+        "time": 2007,
+        "value": 3439.0,
+        "id": 1,
+        "x_pos": 1
+      },
+      {
+        "especie": "Avellano",
+        "time": 2006,
+        "value": 1553.17,
+        "id": 1,
+        "x_pos": 1
+      },
+      {
+        "especie": "Avellano",
+        "time": 2005,
+        "value": 868.03,
+        "id": 1,
+        "x_pos": 1
+      },
+      {
+        "especie": "Avellano",
+        "time": 2004,
+        "value": 868.35,
+        "id": 1,
+        "x_pos": 1
+      },
+      {
+        "especie": "Avellano",
+        "time": 2003,
+        "value": 868.85,
+        "id": 1,
+        "x_pos": 1
+      },
+      {
+        "especie": "Avellano",
+        "time": 2002,
+        "value": 874.1,
+        "id": 1,
+        "x_pos": 1
+      },
+      {
+        "especie": "Avellano",
+        "time": 2001,
+        "value": 874.1,
+        "id": 1,
+        "x_pos": 1
+      },
+      {
+        "especie": "Avellano",
+        "time": 2000,
+        "value": 43.04,
+        "id": 1,
+        "x_pos": 1
+      },
+      {
+        "especie": "Avellano",
+        "time": 1999,
+        "value": 30.28,
+        "id": 1,
+        "x_pos": 1
+      },
+      {
+        "especie": "Castaño",
+        "time": 2024,
+        "value": 1455.7,
+        "id": 2,
+        "x_pos": 2
+      },
+      {
+        "especie": "Castaño",
+        "time": 2023,
+        "value": 1470.0,
+        "id": 2,
+        "x_pos": 2
+      },
+      {
+        "especie": "Castaño",
+        "time": 2022,
+        "value": 1470.0,
+        "id": 2,
+        "x_pos": 2
+      },
+      {
+        "especie": "Castaño",
+        "time": 2021,
+        "value": 1261.75,
+        "id": 2,
+        "x_pos": 2
+      },
+      {
+        "especie": "Castaño",
+        "time": 2020,
+        "value": 1262.8,
+        "id": 2,
+        "x_pos": 2
+      },
+      {
+        "especie": "Castaño",
+        "time": 2019,
+        "value": 1262.8,
+        "id": 2,
+        "x_pos": 2
+      },
+      {
+        "especie": "Castaño",
+        "time": 2018,
+        "value": 960.4,
+        "id": 2,
+        "x_pos": 2
+      },
+      {
+        "especie": "Castaño",
+        "time": 2017,
+        "value": 960.4,
+        "id": 2,
+        "x_pos": 2
+      },
+      {
+        "especie": "Castaño",
+        "time": 2016,
+        "value": 962.9,
+        "id": 2,
+        "x_pos": 2
+      },
+      {
+        "especie": "Castaño",
+        "time": 2015,
+        "value": 472.77,
+        "id": 2,
+        "x_pos": 2
+      },
+      {
+        "especie": "Castaño",
+        "time": 2014,
+        "value": 472.77,
+        "id": 2,
+        "x_pos": 2
+      },
+      {
+        "especie": "Castaño",
+        "time": 2013,
+        "value": 470.27,
+        "id": 2,
+        "x_pos": 2
+      },
+      {
+        "especie": "Castaño",
+        "time": 2012,
+        "value": 575.09,
+        "id": 2,
+        "x_pos": 2
+      },
+      {
+        "especie": "Castaño",
+        "time": 2011,
+        "value": 366.49,
+        "id": 2,
+        "x_pos": 2
+      },
+      {
+        "especie": "Castaño",
+        "time": 2010,
+        "value": 366.49,
+        "id": 2,
+        "x_pos": 2
+      },
+      {
+        "especie": "Castaño",
+        "time": 2009,
+        "value": 366.49,
+        "id": 2,
+        "x_pos": 2
+      },
+      {
+        "especie": "Castaño",
+        "time": 2008,
+        "value": 366.49,
+        "id": 2,
+        "x_pos": 2
+      },
+      {
+        "especie": "Castaño",
+        "time": 2007,
+        "value": 366.49,
+        "id": 2,
+        "x_pos": 2
+      },
+      {
+        "especie": "Castaño",
+        "time": 2006,
+        "value": 348.07,
+        "id": 2,
+        "x_pos": 2
+      },
+      {
+        "especie": "Castaño",
+        "time": 2005,
+        "value": 297.27,
+        "id": 2,
+        "x_pos": 2
+      },
+      {
+        "especie": "Castaño",
+        "time": 2004,
+        "value": 297.27,
+        "id": 2,
+        "x_pos": 2
+      },
+      {
+        "especie": "Castaño",
+        "time": 2003,
+        "value": 297.27,
+        "id": 2,
+        "x_pos": 2
+      },
+      {
+        "especie": "Castaño",
+        "time": 2002,
+        "value": 297.62,
+        "id": 2,
+        "x_pos": 2
+      },
+      {
+        "especie": "Castaño",
+        "time": 2001,
+        "value": 298.02,
+        "id": 2,
+        "x_pos": 2
+      },
+      {
+        "especie": "Castaño",
+        "time": 2000,
+        "value": 161.96,
+        "id": 2,
+        "x_pos": 2
+      },
+      {
+        "especie": "Castaño",
+        "time": 1999,
+        "value": 187.86,
+        "id": 2,
+        "x_pos": 2
+      },
+      {
+        "especie": "Nogal",
+        "time": 2024,
+        "value": 43990.44,
+        "id": 3,
+        "x_pos": 3
+      },
+      {
+        "especie": "Nogal",
+        "time": 2023,
+        "value": 44626.33,
+        "id": 3,
+        "x_pos": 3
+      },
+      {
+        "especie": "Nogal",
+        "time": 2022,
+        "value": 46231.72,
+        "id": 3,
+        "x_pos": 3
+      },
+      {
+        "especie": "Nogal",
+        "time": 2021,
+        "value": 43734.87,
+        "id": 3,
+        "x_pos": 3
+      },
+      {
+        "especie": "Nogal",
+        "time": 2020,
+        "value": 43327.97,
+        "id": 3,
+        "x_pos": 3
+      },
+      {
+        "especie": "Nogal",
+        "time": 2019,
+        "value": 40800.85,
+        "id": 3,
+        "x_pos": 3
+      },
+      {
+        "especie": "Nogal",
+        "time": 2018,
+        "value": 36818.57,
+        "id": 3,
+        "x_pos": 3
+      },
+      {
+        "especie": "Nogal",
+        "time": 2017,
+        "value": 35277.4,
+        "id": 3,
+        "x_pos": 3
+      },
+      {
+        "especie": "Nogal",
+        "time": 2016,
+        "value": 30963.85,
+        "id": 3,
+        "x_pos": 3
+      },
+      {
+        "especie": "Nogal",
+        "time": 2015,
+        "value": 27941.33,
+        "id": 3,
+        "x_pos": 3
+      },
+      {
+        "especie": "Nogal",
+        "time": 2014,
+        "value": 24403.87,
+        "id": 3,
+        "x_pos": 3
+      },
+      {
+        "especie": "Nogal",
+        "time": 2013,
+        "value": 18988.84,
+        "id": 3,
+        "x_pos": 3
+      },
+      {
+        "especie": "Nogal",
+        "time": 2012,
+        "value": 17004.12,
+        "id": 3,
+        "x_pos": 3
+      },
+      {
+        "especie": "Nogal",
+        "time": 2011,
+        "value": 16253.47,
+        "id": 3,
+        "x_pos": 3
+      },
+      {
+        "especie": "Nogal",
+        "time": 2010,
+        "value": 15451.43,
+        "id": 3,
+        "x_pos": 3
+      },
+      {
+        "especie": "Nogal",
+        "time": 2009,
+        "value": 12548.82,
+        "id": 3,
+        "x_pos": 3
+      },
+      {
+        "especie": "Nogal",
+        "time": 2008,
+        "value": 11128.24,
+        "id": 3,
+        "x_pos": 3
+      },
+      {
+        "especie": "Nogal",
+        "time": 2007,
+        "value": 10066.84,
+        "id": 3,
+        "x_pos": 3
+      },
+      {
+        "especie": "Nogal",
+        "time": 2006,
+        "value": 9733.95,
+        "id": 3,
+        "x_pos": 3
+      },
+      {
+        "especie": "Nogal",
+        "time": 2005,
+        "value": 9616.27,
+        "id": 3,
+        "x_pos": 3
+      },
+      {
+        "especie": "Nogal",
+        "time": 2004,
+        "value": 9229.9,
+        "id": 3,
+        "x_pos": 3
+      },
+      {
+        "especie": "Nogal",
+        "time": 2003,
+        "value": 7777.32,
+        "id": 3,
+        "x_pos": 3
+      },
+      {
+        "especie": "Nogal",
+        "time": 2002,
+        "value": 7746.14,
+        "id": 3,
+        "x_pos": 3
+      },
+      {
+        "especie": "Nogal",
+        "time": 2001,
+        "value": 7006.07,
+        "id": 3,
+        "x_pos": 3
+      },
+      {
+        "especie": "Nogal",
+        "time": 2000,
+        "value": 6935.35,
+        "id": 3,
+        "x_pos": 3
+      },
+      {
+        "especie": "Nogal",
+        "time": 1999,
+        "value": 6911.69,
+        "id": 3,
+        "x_pos": 3
+      },
+      {
+        "especie": "Nuez de macadamia",
+        "time": 2024,
+        "value": 0.9,
+        "id": 4,
+        "x_pos": 4
+      },
+      {
+        "especie": "Nuez de macadamia",
+        "time": 2023,
+        "value": 0.9,
+        "id": 4,
+        "x_pos": 4
+      },
+      {
+        "especie": "Nuez de macadamia",
+        "time": 2022,
+        "value": 1.29,
+        "id": 4,
+        "x_pos": 4
+      },
+      {
+        "especie": "Nuez de macadamia",
+        "time": 2021,
+        "value": 1.29,
+        "id": 4,
+        "x_pos": 4
+      },
+      {
+        "especie": "Nuez de macadamia",
+        "time": 2020,
+        "value": 1.29,
+        "id": 4,
+        "x_pos": 4
+      },
+      {
+        "especie": "Nuez de macadamia",
+        "time": 2019,
+        "value": 0.81,
+        "id": 4,
+        "x_pos": 4
+      },
+      {
+        "especie": "Nuez de macadamia",
+        "time": 2018,
+        "value": 0.81,
+        "id": 4,
+        "x_pos": 4
+      },
+      {
+        "especie": "Nuez de macadamia",
+        "time": 2017,
+        "value": 0.81,
+        "id": 4,
+        "x_pos": 4
+      },
+      {
+        "especie": "Nuez de macadamia",
+        "time": 2016,
+        "value": 0.25,
+        "id": 4,
+        "x_pos": 4
+      },
+      {
+        "especie": "Nuez de macadamia",
+        "time": 2015,
+        "value": 0.25,
+        "id": 4,
+        "x_pos": 4
+      },
+      {
+        "especie": "Nuez de macadamia",
+        "time": 2014,
+        "value": 0.79,
+        "id": 4,
+        "x_pos": 4
+      },
+      {
+        "especie": "Nuez de macadamia",
+        "time": 2013,
+        "value": 0.61,
+        "id": 4,
+        "x_pos": 4
+      },
+      {
+        "especie": "Nuez de macadamia",
+        "time": 2012,
+        "value": 0.61,
+        "id": 4,
+        "x_pos": 4
+      },
+      {
+        "especie": "Nuez de macadamia",
+        "time": 2011,
+        "value": 0.61,
+        "id": 4,
+        "x_pos": 4
+      },
+      {
+        "especie": "Nuez de macadamia",
+        "time": 2010,
+        "value": 0.71,
+        "id": 4,
+        "x_pos": 4
+      },
+      {
+        "especie": "Nuez de macadamia",
+        "time": 2009,
+        "value": 0.71,
+        "id": 4,
+        "x_pos": 4
+      },
+      {
+        "especie": "Nuez de macadamia",
+        "time": 2008,
+        "value": 0.12,
+        "id": 4,
+        "x_pos": 4
+      },
+      {
+        "especie": "Nuez de macadamia",
+        "time": 2007,
+        "value": 0.05,
+        "id": 4,
+        "x_pos": 4
+      },
+      {
+        "especie": "Nuez de macadamia",
+        "time": 2006,
+        "value": 0.05,
+        "id": 4,
+        "x_pos": 4
+      },
+      {
+        "especie": "Nuez de macadamia",
+        "time": 2005,
+        "value": 0.05,
+        "id": 4,
+        "x_pos": 4
+      },
+      {
+        "especie": "Nuez de macadamia",
+        "time": 2004,
+        "value": 0.37,
+        "id": 4,
+        "x_pos": 4
+      },
+      {
+        "especie": "Nuez de macadamia",
+        "time": 2003,
+        "value": 0.37,
+        "id": 4,
+        "x_pos": 4
+      },
+      {
+        "especie": "Nuez de macadamia",
+        "time": 2002,
+        "value": 0.37,
+        "id": 4,
+        "x_pos": 4
+      },
+      {
+        "especie": "Nuez de macadamia",
+        "time": 2001,
+        "value": 0.37,
+        "id": 4,
+        "x_pos": 4
+      },
+      {
+        "especie": "Nuez de macadamia",
+        "time": 2000,
+        "value": 0.37,
+        "id": 4,
+        "x_pos": 4
+      },
+      {
+        "especie": "Nuez de macadamia",
+        "time": 1999,
+        "value": 0.37,
+        "id": 4,
+        "x_pos": 4
+      },
+      {
+        "especie": "Pecana",
+        "time": 2024,
+        "value": 18.39,
+        "id": 5,
+        "x_pos": 5
+      },
+      {
+        "especie": "Pecana",
+        "time": 2023,
+        "value": 12.32,
+        "id": 5,
+        "x_pos": 5
+      },
+      {
+        "especie": "Pecana",
+        "time": 2022,
+        "value": 10.4,
+        "id": 5,
+        "x_pos": 5
+      },
+      {
+        "especie": "Pecana",
+        "time": 2021,
+        "value": 12.23,
+        "id": 5,
+        "x_pos": 5
+      },
+      {
+        "especie": "Pecana",
+        "time": 2020,
+        "value": 15.16,
+        "id": 5,
+        "x_pos": 5
+      },
+      {
+        "especie": "Pecana",
+        "time": 2019,
+        "value": 15.21,
+        "id": 5,
+        "x_pos": 5
+      },
+      {
+        "especie": "Pecana",
+        "time": 2018,
+        "value": 17.01,
+        "id": 5,
+        "x_pos": 5
+      },
+      {
+        "especie": "Pecana",
+        "time": 2017,
+        "value": 22.01,
+        "id": 5,
+        "x_pos": 5
+      },
+      {
+        "especie": "Pecana",
+        "time": 2016,
+        "value": 21.96,
+        "id": 5,
+        "x_pos": 5
+      },
+      {
+        "especie": "Pecana",
+        "time": 2015,
+        "value": 16.37,
+        "id": 5,
+        "x_pos": 5
+      },
+      {
+        "especie": "Pecana",
+        "time": 2014,
+        "value": 19.09,
+        "id": 5,
+        "x_pos": 5
+      },
+      {
+        "especie": "Pecana",
+        "time": 2013,
+        "value": 19.59,
+        "id": 5,
+        "x_pos": 5
+      },
+      {
+        "especie": "Pecana",
+        "time": 2012,
+        "value": 19.59,
+        "id": 5,
+        "x_pos": 5
+      },
+      {
+        "especie": "Pecana",
+        "time": 2011,
+        "value": 19.59,
+        "id": 5,
+        "x_pos": 5
+      },
+      {
+        "especie": "Pecana",
+        "time": 2010,
+        "value": 35.86,
+        "id": 5,
+        "x_pos": 5
+      },
+      {
+        "especie": "Pecana",
+        "time": 2009,
+        "value": 35.86,
+        "id": 5,
+        "x_pos": 5
+      },
+      {
+        "especie": "Pecana",
+        "time": 2008,
+        "value": 35.88,
+        "id": 5,
+        "x_pos": 5
+      },
+      {
+        "especie": "Pecana",
+        "time": 2007,
+        "value": 35.38,
+        "id": 5,
+        "x_pos": 5
+      },
+      {
+        "especie": "Pecana",
+        "time": 2006,
+        "value": 36.88,
+        "id": 5,
+        "x_pos": 5
+      },
+      {
+        "especie": "Pecana",
+        "time": 2005,
+        "value": 36.88,
+        "id": 5,
+        "x_pos": 5
+      },
+      {
+        "especie": "Pecana",
+        "time": 2004,
+        "value": 6.74,
+        "id": 5,
+        "x_pos": 5
+      },
+      {
+        "especie": "Pecana",
+        "time": 2003,
+        "value": 6.78,
+        "id": 5,
+        "x_pos": 5
+      },
+      {
+        "especie": "Pecana",
+        "time": 2002,
+        "value": 9.28,
+        "id": 5,
+        "x_pos": 5
+      },
+      {
+        "especie": "Pecana",
+        "time": 2001,
+        "value": 9.28,
+        "id": 5,
+        "x_pos": 5
+      },
+      {
+        "especie": "Pecana",
+        "time": 2000,
+        "value": 12.35,
+        "id": 5,
+        "x_pos": 5
+      },
+      {
+        "especie": "Pecana",
+        "time": 1999,
+        "value": 12.35,
+        "id": 5,
+        "x_pos": 5
+      },
+      {
+        "especie": "Pistacho",
+        "time": 2024,
+        "value": 157.18,
+        "id": 6,
+        "x_pos": 6
+      },
+      {
+        "especie": "Pistacho",
+        "time": 2023,
+        "value": 148.54,
+        "id": 6,
+        "x_pos": 6
+      },
+      {
+        "especie": "Pistacho",
+        "time": 2022,
+        "value": 136.56,
+        "id": 6,
+        "x_pos": 6
+      },
+      {
+        "especie": "Pistacho",
+        "time": 2021,
+        "value": 146.17,
+        "id": 6,
+        "x_pos": 6
+      },
+      {
+        "especie": "Pistacho",
+        "time": 2020,
+        "value": 149.3,
+        "id": 6,
+        "x_pos": 6
+      },
+      {
+        "especie": "Pistacho",
+        "time": 2019,
+        "value": 103.49,
+        "id": 6,
+        "x_pos": 6
+      },
+      {
+        "especie": "Pistacho",
+        "time": 2018,
+        "value": 97.53,
+        "id": 6,
+        "x_pos": 6
+      },
+      {
+        "especie": "Pistacho",
+        "time": 2017,
+        "value": 96.86,
+        "id": 6,
+        "x_pos": 6
+      },
+      {
+        "especie": "Pistacho",
+        "time": 2016,
+        "value": 61.33,
+        "id": 6,
+        "x_pos": 6
+      },
+      {
+        "especie": "Pistacho",
+        "time": 2015,
+        "value": 58.73,
+        "id": 6,
+        "x_pos": 6
+      },
+      {
+        "especie": "Pistacho",
+        "time": 2014,
+        "value": 72.12,
+        "id": 6,
+        "x_pos": 6
+      },
+      {
+        "especie": "Pistacho",
+        "time": 2013,
+        "value": 61.25,
+        "id": 6,
+        "x_pos": 6
+      },
+      {
+        "especie": "Pistacho",
+        "time": 2012,
+        "value": 62.73,
+        "id": 6,
+        "x_pos": 6
+      },
+      {
+        "especie": "Pistacho",
+        "time": 2011,
+        "value": 62.59,
+        "id": 6,
+        "x_pos": 6
+      },
+      {
+        "especie": "Pistacho",
+        "time": 2010,
+        "value": 63.01,
+        "id": 6,
+        "x_pos": 6
+      },
+      {
+        "especie": "Pistacho",
+        "time": 2009,
+        "value": 65.32,
+        "id": 6,
+        "x_pos": 6
+      },
+      {
+        "especie": "Pistacho",
+        "time": 2008,
+        "value": 43.68,
+        "id": 6,
+        "x_pos": 6
+      },
+      {
+        "especie": "Pistacho",
+        "time": 2007,
+        "value": 42.6,
+        "id": 6,
+        "x_pos": 6
+      },
+      {
+        "especie": "Pistacho",
+        "time": 2006,
+        "value": 25.38,
+        "id": 6,
+        "x_pos": 6
+      },
+      {
+        "especie": "Pistacho",
+        "time": 2005,
+        "value": 24.23,
+        "id": 6,
+        "x_pos": 6
+      },
+      {
+        "especie": "Pistacho",
+        "time": 2004,
+        "value": 21.44,
+        "id": 6,
+        "x_pos": 6
+      },
+      {
+        "especie": "Pistacho",
+        "time": 2003,
+        "value": 8.07,
+        "id": 6,
+        "x_pos": 6
+      },
+      {
+        "especie": "Pistacho",
+        "time": 2002,
+        "value": 3.77,
+        "id": 6,
+        "x_pos": 6
+      },
+      {
+        "especie": "Pistacho",
+        "time": 2001,
+        "value": 3.66,
+        "id": 6,
+        "x_pos": 6
+      },
+      {
+        "especie": "Pistacho",
+        "time": 2000,
+        "value": 3.66,
+        "id": 6,
+        "x_pos": 6
+      },
+      {
+        "especie": "Pistacho",
+        "time": 1999,
+        "value": 3.66,
+        "id": 6,
+        "x_pos": 6
+      }
+    ]
+  },
+  "params": [
+    {
+      "name": "param_16",
+      "select": {
+        "type": "point",
+        "fields": ["id"]
+      },
+      "views": ["view_14", "view_15"]
+    },
+    {
+      "name": "param_17",
+      "bind": {
+        "input": "range",
+        "max": 2024,
+        "min": 1999,
+        "name": "Selecciona el año:",
+        "step": 1
+      },
+      "value": 2024
+    }
+  ],
+  "vconcat": [
+    {
+      "mark": {
+        "type": "circle",
+        "filled": true,
+        "opacity": 0.8,
+        "size": 200
+      },
+      "encoding": {
+        "color": {
+          "condition": {
+            "param": "param_16",
+            "field": "id",
+            "legend": null,
+            "scale": {
+              "range": [
+                "#8A9A5B",
+                "#9CAF78",
+                "#7A8C4F",
+                "#6B7D45",
+                "#5C6E3B",
+                "#A3B58A",
+                "#4A5A2F",
+                "#B8C9A3"
+              ]
+            },
+            "type": "ordinal"
+          },
+          "value": "#E0E0E0"
+        },
+        "size": {
+          "field": "value",
+          "legend": {
+            "orient": "bottom"
+          },
+          "scale": {
+            "range": [100, 2000]
+          },
+          "title": "Hectáreas",
+          "type": "quantitative"
+        },
+        "tooltip": [
+          {
+            "field": "especie",
+            "type": "nominal"
+          },
+          {
+            "field": "time",
+            "type": "ordinal"
+          },
+          {
+            "field": "value",
+            "format": ",.0f",
+            "title": "Hectáreas",
+            "type": "quantitative"
+          }
+        ],
+        "x": {
+          "axis": {
+            "labels": false,
+            "ticks": false,
+            "title": "Especies"
+          },
+          "field": "x_pos",
+          "scale": {
+            "padding": 0.5
+          },
+          "type": "ordinal"
+        },
+        "y": {
+          "value": 150
+        }
+      },
+      "height": 200,
+      "name": "view_14",
+      "title": "Hectáreas por Especie - Año Seleccionado",
+      "transform": [
+        {
+          "filter": "(datum.time === param_17)"
+        }
+      ],
+      "width": 600
+    },
+    {
+      "mark": {
+        "type": "line",
+        "point": true,
+        "strokeWidth": 3
+      },
+      "encoding": {
+        "color": {
+          "field": "id",
+          "legend": null,
+          "scale": {
+            "range": [
+              "#8A9A5B",
+              "#9CAF78",
+              "#7A8C4F",
+              "#6B7D45",
+              "#5C6E3B",
+              "#A3B58A",
+              "#4A5A2F",
+              "#B8C9A3"
+            ]
+          },
+          "type": "ordinal"
+        },
+        "tooltip": [
+          {
+            "field": "especie",
+            "type": "nominal"
+          },
+          {
+            "field": "time",
+            "type": "ordinal"
+          },
+          {
+            "field": "value",
+            "type": "quantitative"
+          }
+        ],
+        "x": {
+          "field": "time",
+          "title": "Año",
+          "type": "ordinal"
+        },
+        "y": {
+          "field": "value",
+          "scale": {
+            "zero": false
+          },
+          "title": "Hectáreas",
+          "type": "quantitative"
+        }
+      },
+      "height": 300,
+      "title": "Evolución Temporal de la Especie Seleccionada",
+      "transform": [
+        {
+          "filter": {
+            "param": "param_16"
+          }
+        }
+      ],
+      "width": 600
+    },
+    {
+      "mark": {
+        "type": "bar"
+      },
+      "encoding": {
+        "color": {
+          "condition": {
+            "param": "param_16",
+            "field": "id",
+            "legend": null,
+            "scale": {
+              "range": [
+                "#8A9A5B",
+                "#9CAF78",
+                "#7A8C4F",
+                "#6B7D45",
+                "#5C6E3B",
+                "#A3B58A",
+                "#4A5A2F",
+                "#B8C9A3"
+              ]
+            },
+            "type": "ordinal"
+          },
+          "value": "#E0E0E0"
+        },
+        "tooltip": [
+          {
+            "field": "especie",
+            "type": "nominal"
+          },
+          {
+            "field": "value",
+            "format": ",.0f",
+            "title": "Hectáreas",
+            "type": "quantitative"
+          }
+        ],
+        "x": {
+          "field": "especie",
+          "sort": "-y",
+          "title": "Especies",
+          "type": "nominal"
+        },
+        "y": {
+          "field": "value",
+          "title": "Hectáreas",
+          "type": "quantitative"
+        }
+      },
+      "height": 300,
+      "name": "view_15",
+      "title": "Comparación de Especies - Año Seleccionado",
+      "transform": [
+        {
+          "filter": "(datum.time === param_17)"
+        }
+      ],
+      "width": 600
+    }
+  ]
+}
+;
+
+    // 4. Configura y renderiza el gráfico
+    const options = {
+        actions: true // Permite guardar la imagen y ver el código
+    };
+    vegaEmbed('#vis', spec, options)
+      .then(result => console.log(result))
+      .catch(console.error);
+  </script>
+
+</body>
+</html>
