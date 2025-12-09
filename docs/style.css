@@ -385,10 +385,11 @@ footer {
   max-width: 900px;
 }
 
-.visualizacion {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* CONTENEDOR DE HECTÁREAS */
+.visualizacion-hectareas {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 #grafico-hectareas {
@@ -398,5 +399,35 @@ footer {
 }
 
 #grafico-hectareas > div {
-  margin: 0 auto;
+  width: 100%;
+  max-width: 800px;
+}
+
+.hectareas-bubble {
+    max-width: 1100px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    border: 3px solid var(--verde-oscuro);
+    border-radius: 30px;
+    padding: 30px;
+    position: relative;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+.hectareas-bubble::after {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 60px;
+    border-bottom: 20px solid var(--verde-oscuro);
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+}
+
+/* FOOTER */
+footer {
+  background-color: #8B6B4A;
+  color: white;
+  text-align: center;
+  padding: 15px;
 }
