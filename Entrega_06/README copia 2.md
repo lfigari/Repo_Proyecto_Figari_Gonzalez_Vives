@@ -27,9 +27,6 @@ Esta reformulación incorpora factores medibles que van más allá de que sea un
 A partir de lo anterior, nuestra hipótesis se confirma y complejiza: El boom del pistacho en Chile no es sólo moda. La demanda global, el interés aspiracional, el alza de los precios y la oportunidad agrícola interna, conversan con la idea de que ya no es un fruto seco marginal y es un producto en auge, con crecimiento claro en las importaciones y una expansión incipiente pero acelerada en la producción local. 
 
 Tabla de autoría: 
-
-![
-](<Captura de pantalla 2025-12-02 a las 12.36.00 p. m..png>)
-
+![alt text](<Captura de pantalla 2025-12-02 a las 12.36.00 p. m. 2.png>)
 
 
