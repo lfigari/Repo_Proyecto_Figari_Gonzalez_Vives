@@ -41,7 +41,7 @@ h1 {
 .collage {
   position: relative;
   width: 100%;
-  /*max-width: 1200px;*/
+  /max-width: 1200px;/
   aspect-ratio: 1920 / 1080;
   background: #ffffff; /* ← BLANCO */
   overflow: hidden;
@@ -185,39 +185,12 @@ h1 {
     );
 }
 
-/* 3) Chocolate central: relleno de pistacho (zonas verdes principales) */
+/* 3) Chocolate central: relleno de pistacho */
 .piece-chocolate-pistacho {
     clip-path: polygon(
-        /* zona superior de pistacho + trozo marrón */
-            60% 23%,
-            69% 21%,
-            75% 23%,
-            79% 29%,
-            76% 34%,
-            69% 36%,
-            61% 35%,
-            55% 31%,
-
-                /* zona intermedia de relleno pistacho */
-            39% 38%,
-            50% 34%,
-            63% 37%,
-            70% 42%,
-            71% 49%,
-            66% 55%,
-            55% 58%,
-            44% 55%,
-            37% 49%,
-
-                /* zona inferior (borde de relleno del bloque de abajo) */
-            36% 60%,
-            49% 60%,
-            59% 63%,
-            61% 69%,
-            54% 74%,
-            44% 75%,
-            37% 73%,
-            32% 68%
+        60% 23%, 69% 21%, 75% 23%, 79% 29%, 76% 34%, 69% 36%, 61% 35%, 55% 31%,
+        39% 38%, 50% 34%, 63% 37%, 70% 42%, 71% 49%, 66% 55%, 55% 58%, 44% 55%, 37% 49%,
+        36% 60%, 49% 60%, 59% 63%, 61% 69%, 54% 74%, 44% 75%, 37% 73%, 32% 68%
     );
 }
 
@@ -436,6 +409,21 @@ footer {
   max-width: 900px;
 }
 
+/* ⭐⭐ AÑADIDO PARA QUE LA IMAGEN ENTRE DENTRO DE LA BURBUJA ⭐⭐ */
+.importaciones-image-container {
+  width: 100%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.chart-image {
+  width: 100%;
+  max-width: 900px;
+  border-radius: 15px;
+  display: block;
+  margin: 0 auto;
+}
+
 /* CONTENEDOR DE HECTÁREAS */
 .visualizacion-hectareas {
   max-width: 900px;
@@ -530,3 +518,4 @@ footer {
   text-align: center;
   padding: 15px;
 }
+
