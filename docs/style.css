@@ -41,7 +41,7 @@ h1 {
 .collage {
   position: relative;
   width: 100%;
-  /max-width: 1200px;/
+  /*max-width: 1200px;*/
   aspect-ratio: 1920 / 1080;
   background: #ffffff; /* ← BLANCO */
   overflow: hidden;
